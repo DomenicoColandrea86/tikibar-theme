@@ -1,0 +1,36 @@
+
+div.twitter-wrapper {
+	width: auto;
+	max-width: 100%;
+	padding: 10px 10px;
+}
+
+ul.twitter {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+		span {
+		  font-family: 'Open Sans', sans-serif;
+		  font-weight: 700;
+			font-size: 12px;
+			color: $readMore;
+				&:hover, &:focus {
+					color: lighten($readMore, 15%);
+				}
+		}
+
+		li {
+			font-family: 'Open Sans', sans-serif;
+		  font-weight: 400;
+		  color: $mainText;
+			font-size: 16px;
+			padding-bottom: 10px;
+				a {
+					color: lighten($readMore, 15%);
+						&:hover, &:focus {
+							color: $readMore;
+						}
+				}
+		}
+}

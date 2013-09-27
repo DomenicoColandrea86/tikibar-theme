@@ -1,0 +1,143 @@
+// SASS STUFF
+
+//----------Variables
+
+$errorRed: #d61a1a;
+
+$goGreen: #269d2e;
+
+$greyDot: #f0f0f0;
+
+$gray: #444444;
+
+$pageHighlight: #f2a0bb;
+
+$sand: #f0ede6;
+
+$slogan: #806e57;
+
+$blogTitle: #646464;
+
+$galleryGreen: #9e3844; //or #ad9253
+
+$newsBlue: #aac716;
+
+$readMore: #67a8c4;
+
+$mainText : #424242;
+
+$weather: #5b9b4c;
+
+$tikiTreats: #1c2740;
+
+$webCam: #9e3844;
+
+$faceBook: #b4b4b4;
+
+$yellowClickHere: #e4e06e;
+
+$pinkClickHere: #f2a0bb;
+
+$webcamClickHere : #f2aca0;
+
+$mobileNav: #444444;
+
+$latestTweets: #00a9f4;
+
+$seabreezeMenu: #826aae;
+
+$seabreezeMenuText: #806e57;
+
+$seabreezeMenuColor: #b4596c;
+
+$beachParty: #707c8b;
+
+$niceGreen: #648730;
+
+
+
+//-------------- Mixins
+
+
+@mixin subtleShadow {
+   box-shadow: 0 2px 5px rgba(black, 0.1);
+  }
+
+@mixin subtleTextShadow {
+   text-shadow: 0 1px 3px rgba(black, 0.1);
+  }
+
+
+@mixin font-stack-icon {
+  font-family: 'Entypo';
+  color: white;
+  line-height: 0;
+}
+
+@mixin font-stack-social-icon {
+  font-family: 'socialicoregular';
+  color: white;
+  z-index: 100;
+}
+
+@mixin font-stack-brandon {
+  font-family: 'brandon_grotesqueregular';
+  color: black;
+  z-index: 100;
+}
+
+
+@mixin font-stack-proxima {
+  font-family: 'proxima_nova_cn_rgregular';
+  color: white;
+  z-index: 100;
+}
+
+@mixin font-stack-script {
+  font-family: 'Pacifico', cursive;
+}
+
+
+@mixin breakpoint($point) {
+  @if $point == mama-bear {
+    @media (max-width: 1250px) { @content; }
+  }
+  @if $point == baby-bear {
+    @media (max-width: 768px) { @content; }
+  }
+  @if $point == reverso-baby-bear {
+    @media (min-width: 768px) { @content; }
+  }
+  @if $point == nav-biggie {
+    @media (max-width: 1040px) { @content; }
+  }
+   @if $point == nav-middie {
+    @media (max-width: 800px) { @content; }
+  }
+   @if $point == nav-smalls {
+    @media (max-width: 650px) { @content; }
+  }
+  @if $point == papa-bear {
+    @media (max-width: 1350px) { @content; }
+  }
+  @if $point == sister-bear {
+    @media (max-width: 1000px) { @content; }
+  }
+  @if $point == tiki-treats-900 {
+    @media (max-width: 960px) { @content; }
+  }
+  @if $point == reverso-nav-smalls {
+    @media (min-width: 650px) { @content; }
+  }
+  @if $point == gallery-900 {
+    @media (max-width: 900px) { @content; }
+  }
+}
+
+
+
+
+
+
+
+

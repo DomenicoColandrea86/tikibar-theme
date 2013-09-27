@@ -1,0 +1,125 @@
+
+a span.continue-arrow {
+	position: relative;
+	bottom: 10px;
+}
+
+
+article.banquets-copy {
+
+	div.banquets-copy-wrap {
+		h1 {
+		font-family: 'Francois One', sans-serif;
+		font-weight: bold;
+	  font-size: 2.1em;
+	  color: $blogTitle;
+		}
+		h2 {
+	  @include font-stack-proxima;
+	  font-weight: 700;
+	  color: darken($blogTitle,15%);
+		}
+		a.vip-links {
+			display: block;
+			color: $readMore;
+			font-weight: bold;
+			padding-bottom: 10px;
+		&:hover, &:focus {
+				color: darken($readMore,15%);
+			}
+		}
+	}
+}
+
+article.banquets-copy {
+			h1 {
+		font-family: 'Francois One', sans-serif;
+		font-weight: bold;
+	  font-size: 2.1em;
+	  color: $blogTitle;
+		}
+		h2 {
+	  @include font-stack-proxima;
+	  font-weight: 700;
+	  color: darken($blogTitle,15%);
+		}
+		a.vip-links {
+			display: block;
+			color: $readMore;
+			font-weight: bold;
+			padding-bottom: 10px;
+		&:hover, &:focus {
+				color: darken($readMore,15%);
+			}
+		}
+	}
+
+section.banquets-copy-wrap {
+	margin-bottom: 20px;
+	}
+
+
+div.banquets-main-copy-wrap {
+	position: relative;
+	p {
+		float: left;
+		font-size: 18px;
+		@include transition(font-size, 0.2s);
+		@include breakpoint(baby-bear) {
+			font-size: 16px;
+		}
+	}
+}
+img.banquets-deck-pic {
+	position: relative;
+	//float: right;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	bottom: 10px;
+	max-width: 100%;
+}
+
+img.banquets-deck-pic2 {
+	position: relative;
+	//float: right;
+	margin: 0 auto;
+	padding: 10px 0;
+	max-width: 100%;
+}
+
+
+div.bbq-package {
+
+	h4 {
+		@include font-stack-proxima;
+		background: lighten($beachParty, 30%);
+		margin:0;
+		padding: 10px;
+		color: #424242;
+
+	}
+
+	h6 {
+		 @include font-stack-proxima;
+		padding: 5px;
+		margin:0;
+		color: #424242;
+		&:nth-child(even) {
+			background: $sand;
+			&:hover, &:focus {
+				background: darken($sand, 10%);
+			}
+		}
+	}
+}
+
+div.bbq-package {
+	h6 {
+		&:nth-child(odd) {
+			background: lighten($gray, 70%);
+			&:hover, &:focus {
+				background: lighten($gray, 60%);
+			}
+		}
+	}
+}

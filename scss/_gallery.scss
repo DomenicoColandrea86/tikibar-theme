@@ -1,0 +1,21 @@
+@import "compass/css3";
+@import "bits";
+
+
+.photo-grid {
+		@include column-count(2);
+		@include column-gap(20px);
+		@include transition(width 0.2s ease);
+		@include breakpoint(nav-smalls) {
+			@include column-count(1);
+
+  }
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto !important;
+		margin-bottom: 15px;
+		box-shadow: 1px 1px 3px rgba(black, 0.2);
+	}
+}

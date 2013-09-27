@@ -1,0 +1,74 @@
+#weather {
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+  @include transition(width, 0.2s);
+    
+}
+
+#weather h2 {
+  @include font-stack-proxima;
+  margin: 0 0 8px;
+  color: #293748;
+  font-size: 150px;
+  text-align: center;
+  font-weight: normal!important;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 0 0; 
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+  @include transition(font-size, 0.1s);
+    @media (max-width: 625px) {
+      font-size: 130px;  
+  }
+    @media (max-width: 585px) {
+      font-size: 70px;  
+  }
+}
+
+.weather-wrap h3 {
+  @include font-stack-brandon;
+  font-weight: normal!important;
+  -webkit-font-smoothing: antialiased;
+  margin: 0 0 8px;
+  color: $readMore;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  top: 30px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 0;
+  @media (max-width: 500px) {
+    font-size: 10px;
+  }
+}
+
+#weather ul {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  position: relative;
+  display: block;
+}
+
+#weather li {
+  @include font-stack-brandon;
+  font-weight: normal!important;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 0 0;
+  background: #fff;
+  background: rgba(255,255,255,0.90);
+  padding: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  max-width: 100%;
+  @include breakpoint(baby-bear) {
+    margin-bottom: 20px;
+  }
+}
+
+#weather .currently {
+  margin: 0 20px;
+}

@@ -1,0 +1,533 @@
+//--------------------- Modules
+
+
+.module {
+	position: relative;
+	background: white;
+	padding: 20px 20px 25px;
+	@include subtleShadow;
+	margin: 23px; // ?? MAYBE
+	height: auto;
+	max-width: 100%;
+}
+
+.ticket-module {
+	position: relative;
+	background: white;
+	padding: 20px 20px 25px;
+	@include subtleShadow;
+	margin: 23px; // ?? MAYBE
+	height: auto;
+	max-width: 100%;
+}
+
+section.tiki-section {
+	position: relative;
+	top: -20px;
+}
+
+section.vip-cards-section {
+	top: 20px;
+	margin-bottom: 20px;
+}
+
+.module-contact {
+	position: relative;
+	background: rgba(white, 0.3);
+	padding:  20px 20px 0px;
+	@include subtleShadow;
+	margin: 23px; // ?? MAYBE
+	height: auto;
+	max-width: 100%;
+}
+
+article.ticket-module {
+			h1 {
+		font-family: 'Francois One', sans-serif;
+		font-weight: bold;
+	  font-size: 2.1em;
+	  color: $blogTitle;
+		}
+		h2 {
+	  @include font-stack-proxima;
+	  font-weight: 700;
+	  color: darken($blogTitle,15%);
+		}
+		a.vip-links {
+			display: block;
+			color: $readMore;
+			font-weight: bold;
+			padding-bottom: 10px;
+		&:hover, &:focus {
+				color: darken($readMore,15%);
+			}
+		}
+	}
+
+.module-weather {
+	position: relative;
+	background: rgba(white, 0.6);
+	padding:  20px 20px 25px;
+	@include subtleShadow;
+	margin: 23px; // ?? MAYBE
+	height: auto;
+	max-width: 100%;
+}
+
+div.weather-wrap {
+	background-color: darken(#F2F7F9, 1%);
+	max-width: 100%;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+
+div.opacity-circles {
+	background: lighten($gray, 50%) !important;
+}
+
+
+div.circle1 {
+	position: relative;
+	top: -10px;
+	left: -10px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: lighten($greyDot, 1%);
+}
+div.circle2 {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: lighten($greyDot, 1%);
+}
+
+div.circle3 {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: lighten($greyDot, 1%);
+}
+
+div.circle4 {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: lighten($greyDot, 1%);
+}
+
+div.sb-circle1 {
+	position: relative;
+	top: -10px;
+	left: -10px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: lighten($greyDot, 1%);
+}
+div.sb-circle2 {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: lighten($greyDot, 1%);
+}
+
+div.sb-circle3 {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: lighten($greyDot, 1%);
+}
+
+div.sb-circle4 {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: lighten($greyDot, 1%);
+}
+
+div.slogan-circle1 {
+	position: relative;
+	top: -10px;
+	left: -10px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: lighten($greyDot, 1%);
+}
+div.slogan-circle2 {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: lighten($greyDot, 1%);
+}
+
+div.slogan-circle3 {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: lighten($greyDot, 1%);
+}
+
+div.slogan-circle4 {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: lighten($greyDot, 1%);
+}
+
+
+
+.menu-module {
+	//max-width: 100%;
+	position: relative;
+	background: rgba(white,0.4);
+	padding: 20px;
+	//@include subtleShadow;
+	margin: 23px; // ?? MAYBE
+	box-shadow: 1px 1px 60px rgba(black, 0.1);
+		@include breakpoint(baby-bear) {
+			padding-bottom: 5px;
+			margin: 32px;
+		}
+}
+
+
+section.menu-page-wrap {
+	position: relative;
+	top: 20px;
+}
+
+.module-twitter {
+	background: white;
+	padding: 0 10px 10px;
+	@include subtleShadow;
+	margin: 23px; // ?? MAYBE
+	position: relative;
+
+}
+
+.module-gallery {
+	background: white;
+	padding: 20px;
+	@include subtleShadow;
+	margin: 23px; // ?? MAYBE
+	padding-bottom: 5px;
+}
+
+.module-vip {
+	background: white;
+	padding: 20px;
+	@include subtleShadow;
+	margin: 23px; // ?? MAYBE
+	padding-bottom: 5px;
+	height: auto;
+}
+
+
+
+
+
+//-------------BOTTOM BOXES HOMEPAGE
+
+
+
+.module-box {
+	height: 90px;
+	width: 600px;
+	background: white;
+	@include subtleShadow;
+	margin: 20px 0 0;
+	padding: 40px 100px;
+	  @include breakpoint(nav-smalls) { 
+    width: 100%;
+   }
+}
+
+
+section.bottom-section {
+	position: relative;
+	width: 100%;
+	height: auto;
+	div.column-box {
+		width: 100%;
+		margin: 0 7.5%;
+		@include transition(margin, .2s);
+		@include breakpoint(mama-bear) {
+			margin: 0 6.5%;
+		}
+		@include transition(margin, .2s);
+		@media (max-width: 1025px) {
+			margin: 0 6.5%;
+		}
+		@include transition(margin, .2s);
+		@media (max-width: 850px) {
+			margin: 0 5.8%;
+		}
+		@include breakpoint(baby-bear) {
+			margin: 0 6.9%;
+		}
+		@media (max-width: 480px) {
+			margin: 0 5%;
+		}
+		@media (max-width: 320px) {
+			margin: 0 3.2%;
+		}
+	}
+}
+
+div.column-box {
+
+	ul.first-group {
+		padding-top: 30px;
+	}
+
+	ul.second-group {
+		clear: both;
+		padding-bottom: 20px;
+		@include breakpoint(baby-bear) {
+		margin-top: -10px;
+		padding-bottom: 0;
+		}
+	}
+	ul li {
+		position: relative;
+		list-style: none;
+		a {
+		@include subtleTextShadow;
+		@include subtleShadow;
+		position: relative;
+		display: inline-block;
+		float: left;
+		height: 100px;
+		width: 40%;
+		margin-right: 20px;
+		@include breakpoint(baby-bear) {
+			float: none;
+			margin-right: 0;
+			margin-bottom: 20px;
+			width: 80%;
+		}
+		@media (max-width: 400px){
+			height: 90px;
+		}
+		span {
+			position: absolute;
+			top: 5px;
+			@include font-stack-icon;
+			font-weight: 400;
+			display: inline;
+			position: relative;
+			font-size: 2.2em;
+			line-height: 0;
+			padding-right: 10px;
+			@media (max-width: 400px){
+			padding-right: 5px;
+			top: 3px;
+			}
+		}
+		h2 {
+			font-size: 2.5em;
+			position: relative;
+			top: 8px;
+			left: -10px;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+			text-transform: uppercase;
+			color: $sand;
+			@media (max-width: 1050px){
+				font-size:2em;
+				top: 14px;
+				left: -10px;
+			}
+			@media (max-width: 850px){
+				font-size:1.7em;
+				top: 15px;
+				left: -12px;
+			}
+			@include breakpoint(baby-bear) {
+			font-size: 2.6em;
+			top: 10px;
+			}
+			@media (max-width: 400px){
+			font-size: 1.4em;
+			top: 20px;
+			left: -8px;
+			}
+		}
+		h3 {
+			position: relative;
+			top: -5px;
+			left: 110px;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+			font-size: 1.6em;
+			@include font-stack-script;
+			font-weight: 400;
+			@media (max-width: 1050px){
+				font-size:1.2em;
+				left: 80px;
+				top: 7px;
+			}
+			@media (max-width: 850px){
+				font-size:1.2em;
+				top: 10px;
+				left: 60px;
+			}
+			@include breakpoint(baby-bear) {
+				font-size: 2em;
+				top: 0px;
+				left: 10px;
+			}
+			@media (max-width: 400px){
+			font-size: 1.4em;
+			top: 18px;
+			left: 0;
+
+			}
+		}
+		}
+	}
+}
+
+
+div.column-box {
+	ul li {
+		a.weather-box {
+			background: $weather;
+			&:hover, &:focus {
+				@include transition(background 0.05s ease);
+				background: darken($weather, 15%);
+			}
+			&:active {
+				position: relative;
+				top: 1px;
+			}
+			h3 {
+				color: $yellowClickHere;
+			}
+		}
+		a.tiki-box {
+			background: $tikiTreats;
+			&:hover, &:focus {
+				@include transition(background 0.05s ease);
+				background: darken($tikiTreats, 5%);
+			}
+			&:active {
+				position: relative;
+				top: 1px;
+			}
+			h3 {
+				color: $pinkClickHere;
+			}
+		}
+		a.webcam-box {
+			background: $webCam;
+			&:hover, &:focus {
+			@include transition(background 0.05s ease);
+			background: darken($webCam, 10%);
+		}
+			&:active {
+				position: relative;
+				top: 1px;
+			}
+			h3 {
+				color: $webcamClickHere;
+			}
+		}
+		a.events-box {
+			background: lighten($mobileNav, 10%);
+			&:hover, &:focus {
+			@include transition(background 0.05s ease);
+			background: darken($mobileNav, 3%);
+		}
+			&:active {
+				position: relative;
+				top: 1px;
+			}
+			h3 {
+				color: lighten($beachParty, 30%);				
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------- Homepage Bottom Slogan
+
+h2.h2-slogan {
+	color: $slogan;
+	font-family: 'Francois One', sans-serif;  font-weight: 700;
+  font-size: 2.9em;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(white, 1),
+	  					 1px 2px 2px rgba(black, 0.2);;
+  &:hover, &:focus {
+  	color: darken($slogan, 7%);
+  }
+
+}

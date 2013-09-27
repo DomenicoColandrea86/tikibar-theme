@@ -1,0 +1,148 @@
+div.vip-card {
+	h1 {
+	font-family: 'Francois One', sans-serif;
+	font-weight: bold;
+  font-size: 2.1em;
+  color: $blogTitle;
+	}
+	h2 {
+	 @include font-stack-proxima;
+  font-weight: 700;
+  color: darken($blogTitle,15%);
+	}
+	a.vip-links {
+		display: block;
+		color: $readMore;
+		font-weight: bold;
+		padding-bottom: 10px;
+	&:hover, &:focus {
+			color: darken($readMore,15%);
+		}
+	}
+}
+
+section.tikibar-copy-wrap {
+	margin-bottom: 20px;
+	}
+
+
+div.tiki-copy-wrap {
+	position: relative;
+	p {
+		float: left;
+		font-size: 18px;
+		@include transition(font-size, 0.2s);
+		@include breakpoint(baby-bear) {
+			font-size: 16px;
+		}
+	}
+}
+img.tiki-deck-pic {
+	position: relative;
+	//float: right;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	bottom: 10px;
+	max-width: 100%;
+}
+
+img.tiki-deck-pic2 {
+	position: relative;
+	//float: right;
+	margin: 0 auto;
+	padding: 10px 0;
+	max-width: 100%;
+}
+
+.event-slot {
+	position: relative;
+	background: rgba($sand, 0.4);
+	height: 100%;
+	width: 100%;
+	padding: 50px 10px;
+	margin-bottom: 20px;
+	h2 {
+		position: absolute;
+		font-family: 'Francois One', sans-serif;
+		font-weight: bold;
+		font-size: 2.1em;
+		top: 3px;
+		color: #646464;
+		text-shadow: 1px 1px 1px white;
+			span {
+				font-size: .5em;
+				position: absolute;
+				top: 10px;
+			}
+	}
+	h3 {
+  	@include font-stack-proxima;
+  	font-weight: 400;
+		position: absolute;
+		font-size: 13px;
+	  color: gray;
+	  text-transform: uppercase;
+	  letter-spacing: 3px;
+	  line-height: 2;
+	  position: absolute;
+	  top:5px;
+	  @media(max-width: 500px) {
+	  	font-size: 10px;
+	  }
+    &:hover, &:focus {
+      color: lighten(gray, 25%);
+    }
+	}
+	h4 {
+		 @include font-stack-proxima;
+		position: relative;
+		font-weight: bold;
+		color: $readMore;
+		font-size: 1em;
+		top: 40px;
+		left: 0;
+	}
+	ul li {
+		list-style: none;
+		position: relative;
+		top: 10px;
+		right: 30px;
+	  @include font-stack-proxima;
+  	font-weight: 400;
+		font-size: 1.2em;
+		color: #646464;
+		line-height: 1;
+		margin: 10px 0 15px 0;
+		@include breakpoint(nav-middie) {
+			//font-size: 1.5em;
+		}
+			@media (max-width: 400px) {
+			top: -30px;
+			left: -40px;
+			}
+		span {
+			font-weight: 300;
+		}
+	}
+	.events-image {
+		padding-bottom: 30px;
+
+		img {
+			float: left;
+			position: relative;
+			top: 12px;
+			height: 120px;
+			width: 120px;
+			margin: 20px;
+			right: 30px;
+			padding: 10px;
+			margin-bottom: 20px;
+			@media (max-width: 400px) {
+				float: none;
+			}
+		}
+	}
+}
+
+
+

@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'socialicoregular';
+  src: url('../fonts/socialico-webfont.eot?#') format('eot'),  /* IE6–8 */
+       url('../fonts/socialico-webfont.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('../fonts/socialico-webfont.ttf') format('truetype'),  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+       url('../fonts/socialico-webfont.svg#socialicoregular') format('svg');
+}
+
+
+@font-face {
+  font-family: 'Entypo';
+  src: url('../fonts/entypo-webfont-webfont.eot?#') format('eot'),  /* IE6–8 */
+       url('../fonts/entypo-webfont-webfont.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('../fonts/entypo-webfont-webfont.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+
+@font-face {
+    font-family: 'brandon_grotesqueregular';
+    src: url('../fonts/brandon_re-1-webfont.eot');
+    src: url('../fonts/brandon_re-1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brandon_re-1-webfont.woff') format('woff'),
+         url('../fonts/brandon_re-1-webfont.ttf') format('truetype'),
+         url('../fonts/brandon_re-1-webfont.svg#brandon_grotesqueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_nova_cn_rgregular';
+    src: url('../fonts/proximanovacond-regular-webfont.eot');
+    src: url('../fonts/proximanovacond-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanovacond-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanovacond-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanovacond-regular-webfont.svg#proxima_nova_cn_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.social a [data-icon]:after {
+  @include font-stack-social-icon;
+  content: attr(data-icon);
+  text-transform: none;
+  z-index: 100;
+  // specific to nav?
+  position: absolute;
+  top: 30px;
+  padding-left: 20px;
+  font-size: 50px;
+  line-height: 0;
+  text-shadow:  1px 3px 5px rgba(black, 0.5),
+						  	1px 2px 40px rgba(black, 0.99);
+}
+
+
+.social {
+	position: absolute;
+	right: 200px;
+	top: 42px;
+	z-index: 10000;
+    @include transition(width 0.2s ease);
+    @include breakpoint(nav-middie) { 
+      right: 47px;
+    }
+    @include transition(width 0.2s ease);
+    @include breakpoint(nav-smalls) { 
+      display: none;
+    }
+}
+
+
+.rope {
+  z-index:-10;
+	position: absolute;
+	bottom: 37px;
+	left: -82px;
+}
+
+
+
+
+img.social-box {
+  position: relative;
+  height: 56px;
+  width: 72px;
+  margin-right: 9px;
+	box-shadow: 1px 5px 7px rgba(black, 0.5);
+}
+
+a img.box-1 {
+  @include transform(rotate(-6deg));
+}
+a img.box-2 {
+  @include transform(rotate(6deg));	
+}
+a img.box-3 {
+	@include transform(rotate(-6deg));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

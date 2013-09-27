@@ -1,0 +1,50 @@
+article.module {
+
+	div.webcam-wrap {
+		h1 {
+		font-family: 'Francois One', sans-serif;
+		font-weight: bold;
+	  font-size: 2.1em;
+	  color: $blogTitle;
+		}
+		h2 {
+	  @include font-stack-proxima;
+	  font-weight: 700;
+	  color: darken($blogTitle,15%);
+		}
+		a.vip-links {
+			display: block;
+			color: $readMore;
+			font-weight: bold;
+			padding-bottom: 10px;
+		&:hover, &:focus {
+				color: darken($readMore,15%);
+			}
+		}
+	}
+}
+
+section.webcam-main-wrap {
+	position: relative;
+	top: 25px;
+}
+
+article.webcam-case {
+	height: auto;
+		img {
+			padding: 0;
+			margin: 0;
+		}
+}
+
+aside.twitter-feed-new {
+	a {
+		h1.twitter-widget-title {
+			span.tweet {
+					font-family: 'Entypo' !important;
+			  	color: white;
+			  	line-height: 0;
+			}
+		}
+	}
+}

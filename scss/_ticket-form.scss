@@ -1,0 +1,78 @@
+
+form.giftcard-form {
+
+	@include font-stack-brandon;
+	color: black;
+	font-weight: bold;
+
+	input[type="submit"] {
+		padding: 10px;
+
+	}
+}
+
+form.giftcard-form input,
+form.giftcard-form textarea,
+form.giftcard-form select,
+form.giftcard-form label {
+	@include font-stack-proxima;
+	color: black;
+  font-size:15px;  
+  margin-bottom:2px;
+  width:50px;  
+  border: 1px solid #CEE1E8;  
+  margin-bottom:20px;  
+  padding:4px;
+  @include breakpoint(baby-bear) {
+  	max-width: 100%;
+  	width: 100%;
+	}
+}
+
+form.giftcard-form input[type="submit"] {
+	@include font-stack-proxima;
+	font-size: 13px !important;
+  font-size:15px;  
+  margin-bottom:2px;
+  width:150px;  
+  border: 1px solid #CEE1E8;  
+  margin-bottom:20px;  
+  padding:4px;
+  @include breakpoint(baby-bear) {
+  	max-width: 100%;
+  	width: 100%;
+	}
+}
+
+form.giftcard-form input,
+form.giftcard-form textarea,
+form.giftcard-form select,
+form.giftcard-form label {
+	  border: 1px solid #AFCDD8;  
+    background-color: #EBF2F4;  
+}
+
+form.giftcard-form label {
+	display: block;
+}
+
+form.giftcard-form input[type="submit"] {  
+    //width: 100px;
+    height: 40px;
+    background-color:#333;  
+    color:#FFF;  
+    border:none;  
+    display:block;  
+    float:rightright;  
+    margin-bottom:0px;  
+    margin-right:6px;  
+    background-color:#8FB5C1;  
+    border-radius: 2px;
+    &:hover, &:focus {
+    	background-color: #A6CFDD;
+    }
+    &:active {
+			position:relative;  
+	    top:1px; 
+    }
+}  

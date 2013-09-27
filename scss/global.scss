@@ -1,0 +1,447 @@
+@import "compass/css3";
+@import "bits";
+@import "normalize";
+@import "toolbox";
+@import "icons";
+@import "typography";
+@import "module";
+@import "nav";
+@import "royalslider_skin";
+@import "royalslider";
+@import "grid";
+@import "gallery";
+@import "blogpost";
+@import "twitter-widget";
+@import "colorbox";
+@import "menu";
+@import "events";
+@import "banquets";
+@import "webcam";
+@import "calendario";
+@import "custom_1";
+@import "contact-form";
+@import "weather";
+@import "ticket-form";
+
+$experimental-support-for-svg: true;
+
+	a.tikimenu-link {
+		display: block;
+		color: $readMore;
+		font-weight: bold;
+		padding-bottom: 10px;
+	&:hover, &:focus {
+			color: darken($readMore,15%);
+		}
+	}
+
+	h1.tikimenu-h1 {
+	font-family: 'Francois One', sans-serif;
+	font-weight: bold;
+  font-size: 2.1em;
+  color: $blogTitle;
+	}
+	h2 {
+	 @include font-stack-proxima;
+  font-weight: 700;
+  color: darken($blogTitle,15%);
+	}
+	a.vip-links {
+		display: block;
+		color: $readMore;
+		font-weight: bold;
+		padding-bottom: 10px;
+	&:hover, &:focus {
+			color: darken($readMore,15%);
+		}
+	}
+
+html { -webkit-font-smoothing: antialiased; }
+
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+body {
+	overflow-x: hidden;
+	background: #f0ede6;
+
+}
+
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+   	overflow: hidden;
+   	@media (max-width: 1024px) {
+    	min-height: 700px;
+    }
+   	@media (max-width: 768px) {
+    	min-height: 500px;
+    }
+    @media (max-width: 480px) {
+    	min-height: 300px;
+    	min-width: 300px;
+    	left: 0px;
+    }
+    @media (max-width: 320px) {
+    	min-height: 310px;
+    	min-width: 300px;
+    	left: -60px;
+    }
+}
+ 
+.responsive-iframe-container iframe,   
+.vresponsive-iframe-container object,  
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+img.bbb {
+	height: 40px;
+	position: relative;
+	top: 70px;
+	left: -40px;
+	@media(max-width: 755px){
+	display: none;
+	}
+	@media(max-width: 480px){
+	display: block;
+	}
+}
+
+div.menu-small-hide {
+	display: none;
+	@media (max-width:500px) {
+		display: block;
+	}
+}
+
+article.module {
+	p {
+		a {
+			display: inline-block;
+			color: $readMore !important;
+			@media (max-width: 480px) {
+				font-size: 12px;
+			}
+			&:hover, &:focus {
+				color: darken($readMore, 15%) !important;
+			}
+		}
+	}
+}
+article {
+	a.calendar-link {
+		@include font-stack-proxima;
+		color: $readMore;
+		font-weight: bold;
+		position: relative;
+		left: 20px;
+		&:hover, &:focus {
+			color: darken($readMore, 25%) !important;
+		}
+	}
+}
+
+::-moz-selection { 
+background-color: darken($sand, 10%);
+color: white;
+text-shadow: none;
+}
+
+::selection {
+background-color: darken($sand, 10%);
+color: white;
+text-shadow: none;
+
+}
+
+article.module {
+
+	div.webcam-wrap {
+		
+		img#camara {
+			max-width: 100%;
+			height: auto;
+			margin: 20px auto;
+		}
+	}
+}
+
+aside.twitter-feed-new {
+	position: relative;
+	top: 20px;
+}
+
+header {
+	position: relative;
+	background: url('../images/header-wood-texture.png');
+	height:230px;
+	width: auto;
+	padding: 80px 0 0 0;
+	box-shadow: 1px 1px 10px rgba(black, 0.5);
+		@include breakpoint(baby-bear) {
+			box-shadow: 1px 1px 10px rgba(black, 0.8);
+		}
+}
+
+.logo {
+	position: relative;
+	top: -40px;
+	left: 60px;
+	padding-right: 40px;
+	text-shadow: 2px 2px 2px rgba(black, 0.7);
+	z-index: 100;
+		@include transition(width 0.2s ease);
+    @include breakpoint(nav-middie) { 
+    	left: 40px;
+    	top: -55px;	
+    }
+    @include transition(width 0.2s ease);
+    @include breakpoint(nav-smalls) { 
+    	left: 15px;
+    	bottom: 0px;
+    }
+   	@media (max-width: 650px){
+    	left: 140px;
+		}
+		@media (max-width: 480px){
+    	left: 70px;
+		}
+		@media (max-width: 360px){
+    	left: 20px;
+    	bottom: 0px;
+		}
+		@media (max-width: 320px){
+    	left: 15px;
+    	bottom: 0px;
+		}
+}
+
+.main-content-wrap {
+	width: 80%;
+  margin: 0 auto 40px;
+  position: relative;
+  @include transition(width 0.2s ease);
+  @include breakpoint(mama-bear) { 
+    width: 90%;
+  }
+  @include breakpoint(baby-bear) { 
+    width: 90%;
+  }
+}
+
+article.hours-op {
+		h1 {
+		font-family: 'Francois One', sans-serif;
+		font-weight: bold;
+	  font-size: 2.1em;
+	  color: $blogTitle;
+		}
+		h2 {
+	  @include font-stack-proxima;
+	  font-weight: 700;
+	  color: darken($blogTitle,15%);
+		}
+		a.vip-links {
+			display: block;
+			color: $readMore;
+			font-weight: bold;
+			padding-bottom: 10px;
+		&:hover, &:focus {
+				color: darken($readMore,15%);
+			}
+		}
+	}
+
+.main-bg-wrap {
+	background: #f0ede6;
+	width: 100%;
+	height: auto;
+	background-image: url(../images/main-bg.jpg);
+	background-repeat:no-repeat; 
+	background-position: 0 0;
+	background-size: 120%;
+	display:block;
+
+}
+
+.bottom-section {
+	height:auto;
+	background: #242526 url('../images/footer-bg.png');
+		@include transition(height 0.2s ease);
+  	@include breakpoint(nav-smalls) { 
+    	height: auto;
+   }
+}
+
+footer {
+	height: auto;
+	width: auto;
+	background: #1b1b1b;
+	padding-top: 20px;
+}
+
+section.footer-wrap {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	bottom: 20px;
+	left: 60px;
+	@include transition(left 0.2s ease);
+	@include breakpoint(papa-bear) { 
+		left: 40px;
+	}
+	@include transition(left 0.2s ease);
+	@include breakpoint(mama-bear) { 
+		left: 10px;
+	}
+	@include transition(left 0.2s ease);
+	@include breakpoint(baby-bear) { 
+		ul.footer-ul {
+			position: relative;
+			top: 0;
+			right: 30px;
+		}
+	}
+}
+.footer-wrap ul li {
+  @include font-stack-proxima;
+  font-weight: 700;
+	font-size: 1.6em;	
+	float: left;
+	margin: 20px;
+	list-style: none;
+	@include subtleTextShadow;
+	@include breakpoint(papa-bear) { 
+		font-size: 1.2em;
+	}
+	@include breakpoint(mama-bear) { 
+		font-size: 1.4em;
+	}
+	@include transition(left 0.2s ease);
+	@include breakpoint(baby-bear) { 
+		font-size: 1.2em;
+		margin: 10px;
+		margin-bottom: 10px;
+		line-height: 1;
+	}
+	@media (max-width: 480px) {
+		float: none;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	a {
+		@include transition(color 0.4s ease);
+		&:hover, &:focus {
+			color: white;		}
+	}
+}
+.footer-wrap p {
+  @include font-stack-proxima;
+  font-weight: 400;
+	position: relative;
+	left: -10px;
+	padding-top: 40px;
+	margin: 0 auto;
+	text-align: center;
+	clear: both;
+	font-size: 1.2em;
+	@include transition(left 0.2s ease);
+	@include breakpoint(baby-bear) { 
+		right: 0;
+		font-size: 1.2em;
+	}
+	a {
+		color: $mainText;
+		&:hover, &:focus {
+			color: darken($mainText, 5%);
+		}
+	}
+}
+
+div.contact-form-tiki {
+	min-height: 500px;
+
+}
+
+div#contact-form {
+	h1 {
+		@media (max-width: 400px) {
+			font-size: 20px;
+		}
+	}
+}
+
+div.hours-tiki {
+	min-height: 300px;
+
+}
+
+div.event-module {
+	@include transition(min-height, .3s);
+	min-height: 1000px;
+	@include transition(min-height, .3s);
+	@media (max-width: 1550px) {
+		min-height: 800px;
+	}
+	@include transition(min-height, .3s);
+	@media (max-width: 1250px) {
+		min-height: 670px;
+	}
+	@include transition(min-height, .3s);
+	@media (max-width: 950px) {
+		min-height: 600px;
+	}
+
+}
+
+
+
+div.col1 {
+		position: relative;
+		top: -20px;
+		@include breakpoint(baby-bear) {
+			top: -10px;
+		}
+	ul {
+
+		li {
+			@include font-stack-proxima;
+			font-weight: bold;
+			list-style: none;
+			font-size: 25px;
+			padding: 5px;
+			color: $mainText;
+			a {
+				&:hover, &:focus {
+					color: $readMore;
+				}
+			}
+			@include breakpoint(baby-bear) {
+				font-size: 16px;
+			}
+		}
+		li li:nth-child(1) {
+			padding-top: 10px;
+
+		}
+	}
+}
+
+ul.children {
+	position: relative;
+	left: -45px;
+	li:nth-child(8) {
+		padding-bottom: 0;
+	}
+}
+
+img.subscribe-image {
+	display: none !important;
+}
+

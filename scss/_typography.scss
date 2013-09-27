@@ -1,0 +1,421 @@
+body {
+  font-size: 16px;
+  @include breakpoint(baby-bear) {
+    font-size: 13px;
+  }
+}
+
+a {
+  color: $blogTitle;
+  &:hover, &:focus {
+    color: darken($blogTitle, 15%); 
+  }
+  &:active {
+    color: black;
+  }
+}
+
+h2 a {
+    font-family: 'Francois One', sans-serif;
+    font-size: 32px;
+    @include breakpoint(baby-bear) {
+    font-size: 22px;
+    color: $blogTitle !important;
+  }
+}
+
+h2.single-bp {
+  font-family: 'Francois One', sans-serif;
+  font-size: 34px;
+  color: $blogTitle;
+  &:hover, &:focus {
+    color: darken($blogTitle, 15%); 
+  }
+    @include breakpoint(baby-bear) {
+    font-size: 27px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+h1, .h1 {
+  font-size: 28px;
+  margin: 0;
+  @include breakpoint(baby-bear) {
+    font-size: 32px;
+  }
+}
+h2, .h2 {
+  font-size: 24px;
+  margin: 0 0 5px;
+  @include breakpoint(baby-bear) {
+    font-size: 22px;
+  }
+}
+h3, .h3 { // In blog post sub sections
+  @include font-stack-proxima;
+  font-size: 28px;
+  margin-top: 50px;
+  @include breakpoint(baby-bear) {
+    font-size: 18px;
+  }
+}
+h4, .h4 {
+  font-size: 18px;
+  margin: 0 0 5px 0;;
+  @include breakpoint(baby-bear) {
+    font-size: 14px;
+  }
+}
+h5, .h5 {
+  font-size: 18px;
+  margin: 0;
+  text-transform: uppercase;
+  @include breakpoint(baby-bear) {
+    font-size: 14px;
+  }
+}
+h6 { // Not really used
+  font-size: 14px;
+}
+
+.site-section-title {
+  text-shadow: 0 1px 1px rgba(black, 0.2);
+  @include font-stack-proxima;
+  //text-transform: uppercase;
+  color: white;
+  text-align: left;
+  padding: 0 40px 0;
+  margin: -20px 20px;
+  @include breakpoint(nav-middie) {
+    font-size: 23px;
+  }
+  @include breakpoint(baby-bear) {
+    font-size: 20px;
+    //font-weight: bold;
+  }
+}
+
+
+h1.site-section-title {
+  padding-bottom: 6px;
+}
+
+.recent-pics-title {
+  background: darken($seabreezeMenu, 10%);
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 10px;
+    }
+}
+
+.vip-card-wrap {
+  background: #384a4d;
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 10px;
+    }
+}
+
+.gift-card-wrap {
+  background: #3c323e;
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 10px;
+    }
+}
+
+.beach-parties-wrapper {
+  background: lighten($beachParty, 15%);
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 10px;
+    }
+}
+
+.private-parties-wrapper {
+  background: darken($beachParty, 10%);
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 10px;
+    }
+}
+
+.holiday-wrapper {
+  background: darken($beachParty, 25%);
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 10px;
+    }
+}
+
+.events-title {
+  background: #4d4738;
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.tikimenu-title {
+  background: darken(#00d7ba, 20%);
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 1px;
+    }
+}
+
+
+.beach-title {
+  background: $beachParty;
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.calendar-title {
+  background: darken(#6d7574, 18%);
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.private-title {
+  background: #3f4753;
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.banquets-title {
+  background: #2fa8ac;
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.menu-options {
+  background: $beachParty;
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.seabreeze-menu {
+  background: #2a3240;
+  padding: 8px 10px 0 0px;
+      @include breakpoint(baby-bear) {
+        position: relative;
+        top: 10px;
+    }
+}
+
+.twitter-title {
+  @include transition(background, .1s);
+  background: #006190;
+  padding: 8px 10px 0 0px;
+    @include transition(background, .1s);
+    &:hover, &:focus {
+    background: $latestTweets;
+  }
+}
+
+.twitter-widget-title {
+  @include transition(background, .1s);
+  background: darken($latestTweets, 20%);
+  padding: 8px 10px 0 0px;
+    @include transition(background, .1s);
+    &:hover, &:focus {
+    background: $latestTweets;
+  }
+}
+
+.latest-news-title {
+  background: #982656;
+  padding: 8px 10px 0 0px;
+}
+
+.weather-title {
+  background: #0091c2;
+  padding: 8px 10px 0 0px;
+}
+
+.tickets-title {
+  background: #283a4a;
+  padding: 8px 10px 0 0px;
+}
+
+.webcam-title {
+  background: darken($pinkClickHere, 30%);
+  padding: 8px 10px 0 0px;
+}
+
+.hours-title {
+  background: #aac716;
+  padding: 8px 10px 0 0px;
+}
+
+.site-map-title {
+  background: darken(#765438, 10%);
+  padding: 8px 10px 0 0px;
+}
+
+.employment-title {
+  background: $seabreezeMenuColor;
+  padding: 8px 10px 0 0px;
+}
+
+
+.tiki-treats-title {
+  background: darken($faceBook, 30%);
+  padding: 8px 10px 0 0px;
+}
+.contact-title {
+  background: #707784;
+  padding: 8px 10px 0 0px;
+}
+
+.tikibar-title {
+  background: #242f3c;
+  padding: 8px 10px 0 0px;
+}
+
+.breezy-home {
+  background: #424242;
+  padding: 8px 10px 0 0px;
+}
+
+.wedding-titles {
+  background: #444;
+  padding: 8px 10px 0 0px;
+}
+
+
+
+section h1 span {
+  @include font-stack-icon;
+  font-weight: normal!important;
+  -webkit-font-smoothing: antialiased;
+  font-size: 40px;
+  position: relative;
+  top: 1px;
+  margin: 10px;
+  line-height: 0;
+}
+
+aside h1 span {
+  @include font-stack-icon;
+  font-weight: normal!important;
+  -webkit-font-smoothing: antialiased;
+  font-size: 40px;
+  margin: 10px;
+  line-height: 0;
+  position: relative;
+  top: 1px;
+
+}
+
+aside.twitter-feed {
+
+  position: relative;
+  top: 10px;
+
+  h1 span {
+    @include font-stack-social-icon;
+    font-weight: normal!important;
+    -webkit-font-smoothing: antialiased;
+    font-size: 35px;
+    margin: 10px;
+    position: relative;
+    top: 4px;
+    line-height: 0;
+  }
+}
+
+span.read-more {
+  @include font-stack-proxima;
+  color: $readMore;
+    &:hover, &:focus {
+      color: darken($readMore, 15%);
+    }
+}
+
+time {
+  font-size: 13px;
+  color: gray;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 2;
+    &:hover, &:focus {
+      color: lighten(gray, 25%);
+    }
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+dfn { // Use this more!!
+    font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+p, pre {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: $mainText;
+  margin: 0 0 20px 0;   
+}
+
+dt {
+  font-size: 15px;
+}
+
+dd {
+  font-size: 12px !important;
+  line-height: 1 !important;
+}
+
+a.pdf {
+  color: $mainText; 
+  font-size: 11px;
+  display: block;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+  span {
+    font-weight: bold;
+    color: $readMore;
+  }
+}
